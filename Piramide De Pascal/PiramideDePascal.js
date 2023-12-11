@@ -1,5 +1,4 @@
 const lerLinha = require('readline-sync');
-//var lerLinha = require('readline-sync');
 
 console.log("Digite o numero de linhas para a Pirâmide de Pascal: ");
 const linhas = parseInt(lerLinha.prompt());
@@ -11,7 +10,7 @@ for(let i = 0; i < linhas; i++){
 
     for (let j = 0; j <= i; j++){
         process.stdout.write(numero + " ");
-        numero = Math.floor(numero * (i - j) / (j + 1));
+        numero = numero * (i - j) / (j + 1);
     }
     console.log();
 }
